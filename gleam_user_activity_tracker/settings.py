@@ -5,6 +5,7 @@ SECRET_KEY = 'your-generated-secret-key'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 PORT = os.getenv("PORT", "8000")
+WSGI_APPLICATION = 'gleam_user_activity_tracker.wsgi.application'
 
 DATABASES = {
     'default': {
